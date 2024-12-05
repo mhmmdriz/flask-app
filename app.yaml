@@ -1,0 +1,8 @@
+runtime: python39
+
+entrypoint: gunicorn -w 1 -b :$PORT main:app
+
+resources:
+  cpu: 1
+  memory_gb: 16
+  disk_size_gb: 10
